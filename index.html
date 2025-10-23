@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extreme Precision Accounting</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+Arabic:wght@400;700&family=Roboto:wght@400;500;700&family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'theme-roboto': ['Roboto', 'Tajawal', 'sans-serif'],
+                        'theme-lato': ['Lato', 'Noto Sans Arabic', 'sans-serif'],
+                    },
+                    colors: {
+                        'border': 'hsl(var(--border))',
+                        'input': 'hsl(var(--input))',
+                        'ring': 'hsl(var(--ring))',
+                        'background': 'hsl(var(--background))',
+                        'foreground': 'hsl(var(--foreground))',
+                        'primary': {
+                            DEFAULT: 'hsl(var(--primary))',
+                            foreground: 'hsl(var(--primary-foreground))',
+                        },
+                        'secondary': {
+                            DEFAULT: 'hsl(var(--secondary))',
+                            foreground: 'hsl(var(--secondary-foreground))',
+                        },
+                         'card': {
+                            DEFAULT: 'hsl(var(--card))',
+                            foreground: 'hsl(var(--card-foreground))',
+                        },
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <style type="text/css">
+        body {
+            background-color: hsl(var(--background));
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232f4b26' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .dark body {
+            background-color: hsl(var(--background));
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        :root {
+            --background: 0 0% 100%;
+            --foreground: 224 71.4% 4.1%;
+            --card: 0 0% 100%;
+            --card-foreground: 224 71.4% 4.1%;
+            --primary-foreground: 355.7 100% 97.3%;
+            --secondary: 220 13% 91%;
+            --secondary-foreground: 220.9 39.3% 11%;
+            --border: 220 13% 91%;
+            --input: 220 13% 91%;
+            --ring: 224.3 76.3% 48%;
+            --primary: 222.2 84% 4.9%; /* Default Primary */
+            --secondary-color: 210 40% 96.1%; /* Default Secondary */
+            --card-color: 0 0% 100%; /* Default Card */
+        }
+
+        .dark {
+            --background: 224 71.4% 4.1%;
+            --foreground: 210 20% 98%;
+            --card: 224 71.4% 4.1%;
+            --card-foreground: 210 20% 98%;
+            --primary-foreground: 210 20% 98%;
+            --secondary: 215 27.9% 16.9%;
+            --secondary-foreground: 210 20% 98%;
+            --border: 215 27.9% 16.9%;
+            --input: 215 27.9% 16.9%;
+            --ring: 217.9 100% 66.1%;
+            --card-color: 224 71.4% 4.1%; /* Default Card Dark */
+        }
+    </style>
+</head>
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://aistudiocdn.com/react@^19.2.0",
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+        "react/": "https://aistudiocdn.com/react@^19.2.0/",
+        "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.4"
+      }
+    }
+    </script>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
