@@ -1,4 +1,9 @@
+
 import React, { useContext, useEffect } from 'react';
+// Using HashRouter is crucial for simple deployment on static hosting services
+// like GitHub Pages. It uses the URL hash (#) to manage routes client-side,
+// preventing the server from receiving requests for paths it doesn't know
+// about (e.g., /services), which would otherwise result in a 404 error.
 import { HashRouter as Router, Routes, Route, Navigate, Outlet } from 'react-router-dom';
 
 // Layouts
